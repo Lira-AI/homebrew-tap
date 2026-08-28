@@ -5,19 +5,19 @@
 class Lira < Formula
   desc "AI terminal client"
   homepage "https://lira-ai.com"
-  version "0.9.12"
+  version "0.9.13"
 
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://api.lira-ai.com/download/tui/0.9.12/lira-0.9.12-aarch64-apple-darwin.zip"
-      sha256 "bd3000d3920b0d88601e01393f8302a950b34b225006d68377c0ab164087dd60"
+      url "https://api.lira-ai.com/download/tui/0.9.13/lira-0.9.13-aarch64-apple-darwin.zip"
+      sha256 "a8e740beb67e28d595d11d50d869b2b2d0db05f9ee6930917ade62a480c08a56"
     end
 
     if Hardware::CPU.intel?
-      url "https://api.lira-ai.com/download/tui/0.9.12/lira-0.9.12-x86_64-apple-darwin.zip"
-      sha256 "9aff5c292eb1bf4f3e4241b111271b620c8b0f1f133a3947f7bed809a2a9fc26"
+      url "https://api.lira-ai.com/download/tui/0.9.13/lira-0.9.13-x86_64-apple-darwin.zip"
+      sha256 "940cf1786c0ebf2cb4cac933aed6671baec9cd782494bf6069e8038896c071b6"
     end
   end
 
